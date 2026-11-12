@@ -28,8 +28,19 @@ body {
   justify-content: center;
 }
 
+h2 {
+  font-size: 2.3rem;
+  cursor: default;
+}
+
 p {
   font-size: 1.8rem;
+  cursor: default;
+}
+
+img {
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 .members {
@@ -45,10 +56,20 @@ p {
 }
 
 .album {
-  flex: 1 1 300px;
+  flex: 0 0 50%;
+}
+
+.album-art {
+  max-width: 300px;
 }
 
 ol {
   list-style-type: none;
   padding: unset;
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+:is(h1, h2, p, li):hover {
+  color: red;
 }
